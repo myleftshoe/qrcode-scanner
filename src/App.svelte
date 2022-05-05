@@ -18,7 +18,6 @@
             {
                 fps: 10,
                 qrbox: { width: 250, height: 250 },
-                disableFlip: true
             },
             onScanSuccess,
             onScanFailure
@@ -48,7 +47,7 @@
         justify-content: center;
         gap: 20px;
     }
-    #reader {
+    reader {
         width: 100%;
         min-height: 500px;
         background-color: black;
