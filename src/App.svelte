@@ -10,11 +10,6 @@
     onMount(init)
 
     function init() {
-        // fix for iOS, otherwiser reader ref is not required
-        reader.setAttribute('autoplay', '')
-        reader.setAttribute('muted', '')
-        reader.setAttribute('playsinline', '')
-
         html5Qrcode = new Html5Qrcode('reader')
     }
 
