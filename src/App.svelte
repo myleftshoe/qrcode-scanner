@@ -31,7 +31,8 @@
     }
 
     function onScanSuccess(decodedText, decodedResult) {
-        alert(`Code matched = ${decodedText}`, decodedResult)
+        alert(`Code matched = ${decodedText}`)
+        console.log(decodedResult)
     }
 
     function onScanFailure(error) {
