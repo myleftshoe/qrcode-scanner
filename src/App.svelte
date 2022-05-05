@@ -2,7 +2,6 @@
     import { Html5Qrcode } from 'html5-qrcode'
     import { onMount } from 'svelte'
 
-    let reader
     let scanning = false
 
     let html5Qrcode
@@ -57,7 +56,7 @@
 </style>
 
 <main>
-    <div id="reader" bind:this={reader} />
+    <reader id="reader"/>
     {#if scanning}
         <button on:click={stop}>stop</button>
     {:else}
